@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timepass</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./Asset/css/ap.css">
+</head>
+
+<body>
+    <div class="fix">
+    </div>
+
+
+    <nav class="navbar">
+        <a href="#" class="logo">ap's <span>fruits</span> </a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <div class="links">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#product" onclick="toggleMenu()">Contact us</a>
+            <a href="#" onclick="toggleMenu()">Services</a>
+            <a href="#" onclick="toggleMenu()">About Us</a>
+        </div>
+    </nav>
+
+    <div class="home" id="#home">
+        <div class="banner1">
+            <img src="./Asset/photo/fr1.png" alt="">
+            <span></span>
+        </div>
+        <div class="banner">
+            <h1 id="h1">Ap's Fruit Shop</h1>
+            <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deserunt consequatur dolorum!</p>
+            <button type="submit" class="btn">buy now</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <h1 class="heading prd" style="text-align:center;margin:10px;padding-top:10px"><span>Best Offers</span></h1>
+        <div class="container">
+            <span class="spn"><span class="ap"></span></span>
+
+            <div class="bx">
+                <span class="span"></span>
+                <img src="./Asset/photo/fr1.png" alt="">
+                <h1 class="heading"><span> fresh fruits</span></h1>
+            </div>
+
+            <div class="bx">
+
+                <h2>Big Offer</h2>
+                <p class="heading1"> <span>Offer starts 1apri to 7apri</span></p>
+
+            </div>
+
+
+            <div class="bx">
+                <span class="span1"></span>
+                <img src="./Asset/photo/fr3.png" alt="">
+                <h1 class="heading"><span> healthy fruits</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="product" id="product">
+        <h1 class="heading prd"><span>Products</span></h1>
+       <div class="container3">
+        <div class="card">
+            <img src="./Asset/photo/fr1.png" alt="">
+            <h2>Mango</h2>
+            <p><strong>Price:&nbsp;</strong>300 &#x20B9; 1kg</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./Asset/photo/fr2.png" alt="">
+            <h2>Mango</h2>
+            <p><strong>Price:&nbsp;</strong>300 &#x20B9; 1kg</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./Asset/photo/fr3.png" alt="">
+            <h2>Mango</h2>
+            <p><strong>Price:&nbsp;</strong>300 &#x20B9; 1kg</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="./Asset/photo/fr1.png" alt="">
+            <h2>Mango</h2>
+            <p><strong>Price:&nbsp;</strong>300 &#x20B9; 1kg</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./Asset/photo/fr2.png" alt="">
+            <h2>Mango</h2>
+            <p><strong>Price:&nbsp;</strong>300 &#x20B9; 1kg</p>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="card">
+            <img src="./Asset/photo/fr3.png" alt="">
+            <h2>Mango</h2>
+            <p><strong>Price:&nbsp;</strong>300 &#x20B9; 1kg</p>
+            <button class="btn">Buy Now</button>
+        </div>
+       </div>
+    </div>
+
+    <div class="service">
+        <h1 class="heading prd"><span>Services</span></h1>
+        <div class="container4">
+            <div class="card">
+                <img src="./Asset/photo/serv1.png" alt="">
+                <h2> Healthy and Fresh food</h2>
+                <button class="btn">Buy Now</button>
+                
+            </div>
+
+            <div class="card">
+                <img src="./Asset/photo/serv2.png" alt="">
+                <h2>Free Home Delivery</h2>
+                <button class="btn">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="./Asset/photo/serv3.png" alt="">
+                <h2>Cash on Delivery</h2>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.addEventListener('scroll',function(){
+        const header = document.querySelector('.navbar');
+        console.log('hello');
+        header.classList.toggle("sticky",window.scrollY > 0);
+    });
+
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const links =  document.querySelector('.links');
+        menuToggle.classList.toggle('active');
+        links.classList.toggle('active');
+    }
+
+
+   
+</script>
+</html>
